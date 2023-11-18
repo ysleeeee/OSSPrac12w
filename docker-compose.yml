@@ -3,8 +3,8 @@ version: "3.1"
 services:
   web:
     build: .
-    image: ${DOCKER_USER_ID}/hw6
+    image: kilsuplee/hw6
     ports:
       - "80:80"
     production:
-      image: ${DOCKER_USER_ID}/hw6:${BUILD_NUMBER}
+      image: kilsuplee/hw6:${BUILD_NUMBER}
