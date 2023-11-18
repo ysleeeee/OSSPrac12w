@@ -5,6 +5,6 @@ services:
     build: .
     image: kilsuplee/hw6
     ports:
-      - "80:80"
+      - "5000:5000"
     production:
       image: kilsuplee/hw6:${BUILD_NUMBER}
