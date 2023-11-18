@@ -6,5 +6,4 @@ services:
     image:  kilsuplee/prac12
     ports:
       - "5000:5000"
-    production:
-      image:  kilsuplee/prac12:${BUILD_NUMBER}
+
