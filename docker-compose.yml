@@ -1,10 +1,12 @@
-version: "3.1"
-
+version: "3.7"
+  
 services:
-  web-app:
+  web:
+    environment:
+      - DOCKER_USER_ID=kilsuplee
     build: .
-    image: kilsuplee/hw6
+    image:  ${DOCKER_USER_ID}/prac12
     ports:
       - "5000:5000"
     production:
-      image: kilsuplee/hw6:${BUILD_NUMBER}
+      image:  ${DOCKER_USER_ID}/prac12:${BUILD_NUMBER}
