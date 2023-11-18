@@ -1,6 +1,5 @@
 version: "3.1"
-configs:
-    DOCKER_USER_ID = "kilsuplee"
+
 services:
   web:
     build: .
