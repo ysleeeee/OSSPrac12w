@@ -2,11 +2,9 @@ version: "3.7"
   
 services:
   web:
-    environment:
-      - DOCKER_USER_ID=kilsuplee
     build: .
-    image:  ${DOCKER_USER_ID}/prac12
+    image:  kilsuplee/prac12
     ports:
       - "5000:5000"
     production:
-      image:  ${DOCKER_USER_ID}/prac12:${BUILD_NUMBER}
+      image:  kilsuplee/prac12:${BUILD_NUMBER}
