@@ -3,7 +3,7 @@ version: "3.0"
 services:
   web:
     build: .
-    image:  ${DOCKER_USER_ID}/prac12w
+    image:  ${DOCKER_USER}/prac12w
     ports:
       - "5000:5000"
 
